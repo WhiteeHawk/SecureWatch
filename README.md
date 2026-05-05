@@ -11,10 +11,10 @@
 ##  Screenshots
 
 ### Main Dashboard — Live Monitoring
-![SecureWatch Dashboard](screenshot_main.png)
+![SecureWatch Dashboard](screenshot_main.png.png)
 
 ### Demo Mode — Full Attack Scenario Simulation
-![SecureWatch Demo Mode](screenshot_demo.png)
+![SecureWatch Demo Mode](screenshot_demo.png.png)
 
 ---
 
