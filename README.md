@@ -1,10 +1,20 @@
-# 🛡 SecureWatch v1.0
+#  SecureWatch v1.0
 ### Intrusion Detection System (IDS)
 
 > **Author:** Abdulelah Mutlaq Alotaibe  
 > **Version:** 1.0  
 > **Platform:** Windows 10 / 11  
 > **Language:** Python  
+
+---
+
+##  Screenshots
+
+### Main Dashboard — Live Monitoring
+![SecureWatch Dashboard](screenshot_main.png)
+
+### Demo Mode — Full Attack Scenario Simulation
+![SecureWatch Demo Mode](screenshot_demo.png)
 
 ---
 
@@ -25,7 +35,6 @@ It monitors your network traffic and instantly alerts you when it detects suspic
 |  **SQL Injection** | Malicious SQL patterns in network payloads |
 |  **XSS Attack** | JavaScript injection attempts |
 |  **ARP Spoofing** | Man-in-the-Middle attack on local network |
-|  **DNS Poisoning** | Fake DNS responses |
 |  **Malware C&C** | Device communicating with known malware servers |
 |  **Zero-Day Ports** | Connections to backdoor / RAT ports |
 |  **Data Exfiltration** | Sensitive data (passwords, API keys) leaving your system |
@@ -38,24 +47,16 @@ It monitors your network traffic and instantly alerts you when it detects suspic
 Don't have Administrator access? No problem!  
 SecureWatch includes a **Demo Mode** that simulates all attack types so you can see exactly how the system works — no admin required.
 
----
-
-##  Screenshots
-
-> Main Dashboard — Live monitoring with real-time alerts
-
-```
-🛡 SecureWatch  v1.0  |  Abdulelah Mutlaq Alotaibe        ● MONITORING
-
- Total Packets        Threats        Warnings        Blocked IPs
-     12,847              3               7                2
-
- [CRITICAL]  Port Scan Detected
-   Time    : 2026-05-04 17:32:11
-   Source  : 203.0.113.42
-   Details : Scanned 18 ports in 5s — attacker mapping your network!
-   ──────────────────────────────────────────────────────
-```
+**Available simulations:**
+- Port Scan
+- Brute Force
+- DDoS Attack
+- SQL Injection
+- XSS Attack
+- ARP Spoofing
+- Malware C&C
+- Data Exfiltration
+- **Full Scenario** ← Complete multi-stage attack (Recon → Exploit → Exfil)
 
 ---
 
@@ -102,10 +103,12 @@ pip install customtkinter pyinstaller pillow
 
 ```
 SecureWatch/
-├── SecureWatch.py      ← Main application
-├── make_icon.py        ← Icon generator
-├── build.bat           ← Build to .exe
-└── README.md           ← This file
+├── SecureWatch.py        ← Main application
+├── make_icon.py          ← Icon generator
+├── build.bat             ← Build to .exe
+├── screenshot_main.png   ← Dashboard screenshot
+├── screenshot_demo.png   ← Demo Mode screenshot
+└── README.md             ← This file
 ```
 
 ---
